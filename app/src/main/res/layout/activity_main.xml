@@ -1,0 +1,478 @@
+<android.widget.ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+tools:context="com.example.android.quizapp.MainActivity"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:id="@+id/mainScrollView">
+
+<android.widget.LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp">
+
+    <!-- Question 1 -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="1. What output will be produced by the code below?"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="#f5f2f0"
+        android:padding="10dp"
+        android:text="var i = 2\n\ndo {\n    print(i)\n    i *= 2\n} while (i &lt; 128)"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:id="@+id/question_1">
+        <RadioButton
+            android:id="@+id/question_1_answer_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2, 4, 8, 16, 32, 64"/>
+        <RadioButton
+            android:id="@+id/question_1_answer_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2, 4, 8, 16, 32, 64, 128"/>
+        <RadioButton
+            android:id="@+id/question_1_answer_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4, 8, 16, 32, 64"/>
+        <RadioButton
+            android:id="@+id/question_1_answer_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4, 8, 16, 32, 64, 128"/>
+    </RadioGroup>
+
+    <!-- Question 2 -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="2. What output will be produced by the code below?"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="#f5f2f0"
+        android:padding="10dp"
+        android:text="import Foundation\nlet number = 16\n\nprint(&quot;\(number) squared is \(number * number), and its square root is \(sqrt(number))&quot;)"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:id="@+id/question_2">
+        <RadioButton
+            android:id="@+id/question_2_answer_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="16 squared is 16 * 16, and its square root is sqrt(16)"/>
+        <RadioButton
+            android:id="@+id/question_2_answer_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="16 squared is 256, and its square root is 4"/>
+        <RadioButton
+            android:id="@+id/question_2_answer_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="16.0 squared is 256.0, and its square root is 4.0"/>
+        <RadioButton
+            android:id="@+id/question_2_answer_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="This code will compile but crash"/>
+    </RadioGroup>
+
+    <!-- Question 3 -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="3. When this code is executed, what will be the value of the j constant?"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="#f5f2f0"
+        android:padding="10dp"
+        android:text="let i = &quot;5&quot;\nlet j = i + i"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:id="@+id/question_3">
+        <RadioButton
+            android:id="@+id/question_3_answer_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="&quot;5&quot; (a string)"/>
+        <RadioButton
+            android:id="@+id/question_3_answer_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="&quot;5&quot;, &quot;5&quot; (an array of strings)"/>
+        <RadioButton
+            android:id="@+id/question_3_answer_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="&quot;55&quot; (a string)"/>
+        <RadioButton
+            android:id="@+id/question_3_answer_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5 (an integer)"/>
+    </RadioGroup>
+
+    <!-- Question 4 -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="4. When this code is executed, what will be the value of the j constant?"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="#f5f2f0"
+        android:padding="10dp"
+        android:text="let i = &quot;5&quot;\nlet j = i + i"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:id="@+id/question_4">
+        <RadioButton
+            android:id="@+id/question_4_answer_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="&quot;5&quot; (a string)"/>
+        <RadioButton
+            android:id="@+id/question_4_answer_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="&quot;5&quot;, &quot;5&quot; (an array of strings)"/>
+        <RadioButton
+            android:id="@+id/question_4_answer_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="&quot;55&quot; (a string)"/>
+        <RadioButton
+            android:id="@+id/question_4_answer_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5 (an integer)"/>
+    </RadioGroup>
+
+    <!-- Question 5 -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="5. Given the code below, what data type does i have?"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="#f5f2f0"
+        android:padding="10dp"
+        android:text="let i = 10.2"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:id="@+id/question_5">
+        <RadioButton
+            android:id="@+id/question_5_answer_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Decimal"/>
+        <RadioButton
+            android:id="@+id/question_5_answer_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Double"/>
+        <RadioButton
+            android:id="@+id/question_5_answer_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Float"/>
+        <RadioButton
+            android:id="@+id/question_5_answer_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Int"/>
+    </RadioGroup>
+
+    <!-- Question 6 -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="6. When this code is executed, what value will num have?"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="#f5f2f0"
+        android:padding="10dp"
+        android:text="let num = UInt.min"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:id="@+id/question_6">
+        <RadioButton
+            android:id="@+id/question_6_answer_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-16,777,216"/>
+        <RadioButton
+            android:id="@+id/question_6_answer_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-255"/>
+        <RadioButton
+            android:id="@+id/question_6_answer_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"/>
+        <RadioButton
+            android:id="@+id/question_6_answer_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="16,777,216"/>
+        <RadioButton
+            android:id="@+id/question_6_answer_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="255"/>
+    </RadioGroup>
+
+    <!-- Question 7 -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="7. What output will be produced by the code below?"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="#f5f2f0"
+        android:padding="10dp"
+        android:text="let names = [&quot;Amy&quot;, &quot;Clara&quot;]\n\nfor i in 0 ... names.length {\n    print(&quot;Hello, \(names[i])!&quot;)\n}"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:id="@+id/question_7">
+        <RadioButton
+            android:id="@+id/question_7_answer_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="&quot;Hello, Amy!&quot;"/>
+        <RadioButton
+            android:id="@+id/question_7_answer_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="&quot;Hello, Amy!&quot;, &quot;Hello, Clara!&quot;"/>
+        <RadioButton
+            android:id="@+id/question_7_answer_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="&quot;Hello, Clara!&quot;"/>
+        <RadioButton
+            android:id="@+id/question_7_answer_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="This code will compile but crash"/>
+    </RadioGroup>
+
+    <!-- Question 8 -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="8. What output will be produced by the code below?"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="#f5f2f0"
+        android:padding="10dp"
+        android:text="let i = 3\n\nswitch i {\ncase 1:\n    print(&quot;Number was 1&quot;)\n    case 2:\n    print(&quot;Number was 2&quot;)\n    case 3:\n    print(&quot;Number was 3&quot;)\n}"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:id="@+id/question_8">
+        <RadioButton
+            android:id="@+id/question_8_answer_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Number was 1"/>
+        <RadioButton
+            android:id="@+id/question_8_answer_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Number was 2"/>
+        <RadioButton
+            android:id="@+id/question_8_answer_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Number was 3"/>
+        <RadioButton
+            android:id="@+id/question_8_answer_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nothing will be output"/>
+    </RadioGroup>
+
+    <!-- Question 9 -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="9. What output will be produced by the code below?"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="#f5f2f0"
+        android:padding="10dp"
+        android:text="for i in 1...3 {\n    print(i)\n}"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:id="@+id/question_9">
+        <RadioButton
+            android:id="@+id/question_9_answer_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1, 2"/>
+        <RadioButton
+            android:id="@+id/question_9_answer_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1, 2, 3"/>
+        <RadioButton
+            android:id="@+id/question_9_answer_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2"/>
+        <RadioButton
+            android:id="@+id/question_9_answer_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2, 3"/>
+    </RadioGroup>
+
+    <!-- Question 10 -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="10. What output will be produced by the code below?"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:background="#f5f2f0"
+        android:padding="10dp"
+        android:text="final class Dog {\n    func bark() {\n        print(&quot;Woof!&quot;)\n    }\n}\n\nclass Corgi : Dog {\n    override func bark() {\n       print(&quot;Yip!&quot;)\n    }\n}\n\nlet muttface = Corgi()\nmuttface.bark()"/>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:id="@+id/question_10">
+        <RadioButton
+            android:id="@+id/question_10_answer_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="&quot;Woof!&quot;"/>
+        <RadioButton
+            android:id="@+id/question_10_answer_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="&quot;Woof!&quot;, &quot;Yip!&quot;"/>
+        <RadioButton
+            android:id="@+id/question_10_answer_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="&quot;Yip!&quot;"/>
+        <RadioButton
+            android:id="@+id/question_10_answer_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="This code will not compile"/>
+    </RadioGroup>
+
+    <android.widget.LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:onClick="submitTest"
+            android:background="#FF9800"
+            android:text="Submit" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_alignParentRight="true"
+            android:onClick="resetTest"
+            android:background="#FF9800"
+            android:text="Reset" />
+
+    </android.widget.LinearLayout>
+
+</android.widget.LinearLayout>
+
+</android.widget.ScrollView>
