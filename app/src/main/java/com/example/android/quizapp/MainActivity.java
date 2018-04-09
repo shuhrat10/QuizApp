@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.CheckBox;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.ScrollView;
@@ -25,6 +26,11 @@ public class MainActivity extends AppCompatActivity {
     private RadioGroup question_9;
     private RadioGroup question_10;
 
+    private CheckBox question_11_1;
+    private CheckBox question_11_2;
+    private CheckBox question_11_3;
+    private CheckBox question_11_4;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -40,6 +46,11 @@ public class MainActivity extends AppCompatActivity {
         question_8 = (RadioGroup) findViewById(R.id.question_8);
         question_9 = (RadioGroup) findViewById(R.id.question_9);
         question_10 = (RadioGroup) findViewById(R.id.question_10);
+
+        question_11_1 = (CheckBox) findViewById(R.id.question_11_answer_1);
+        question_11_2 = (CheckBox) findViewById(R.id.question_11_answer_2);
+        question_11_3 = (CheckBox) findViewById(R.id.question_11_answer_3);
+        question_11_4 = (CheckBox) findViewById(R.id.question_11_answer_4);
     }
 
     /**
@@ -58,6 +69,18 @@ public class MainActivity extends AppCompatActivity {
         correctAnswers += answer(question_8, 3);
         correctAnswers += answer(question_9, 2);
         correctAnswers += answer(question_10, 4);
+
+        int question_11_answers = 0;
+        question_11_answers += answer(question_11_1, true);
+        question_11_answers += answer(question_11_2, true);
+        question_11_answers += answer(question_11_3, true);
+        question_11_answers += answer(question_11_4, false);
+
+        if (question_11_answers == 3) {
+            correctAnswers += 1;
+        } else if (correctAnswers > 0) {
+            correctAnswers -= 1;
+        }
 
         Log.v("", "" + correctAnswers);
 
@@ -98,6 +121,22 @@ public class MainActivity extends AppCompatActivity {
         RadioButton button = (RadioButton) findViewById(selectedId);
         int index = question.indexOfChild(button);
         if (correctAnswer == index + 1) {
+            return 1;
+        } else {
+            return 0;
+        }
+    }
+
+    /**
+     * Return result for selected questions
+     */
+    private int answer(CheckBox question, boolean correctAnswer) {
+        int selectedId = question.getId();
+        if (selectedId == -1) {
+            return 0;
+        }
+        CheckBox checkbox = (CheckBox) findViewById(selectedId);
+        if (checkbox.isChecked() == true) {
             return 1;
         } else {
             return 0;
